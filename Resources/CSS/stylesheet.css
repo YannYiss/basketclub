@@ -1,0 +1,410 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+html {
+    background-color: #e9e6ff;
+    font-size: 26px;
+    color: #353a47;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+    color: #89fc00;
+}
+
+h1, h2, h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: #279AF1;
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
+}
+
+img {
+    max-height: 300px;
+    max-width: 100%;
+    border: #279AF1 solid 2px;
+    border-radius: 10px;
+}
+
+/*Header*/
+
+header {
+    box-sizing: border-box;
+    display: inline-flex;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: #353a47;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #89fc00 solid 1px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: #89FC00;
+    text-align: left;
+    margin-left: 10px;
+}
+
+header img {
+    max-height: 60px;
+    width: auto;
+    border: none;
+}
+
+header li {
+    display: inline;
+    font-size: 0.85rem;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+/*Who*/
+
+.who {
+    padding: 85px 0 30px 0;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.who h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.who p {
+    text-align: justify;
+    font-size: 0.75rem;
+}
+
+.basket_pics {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 1;
+}
+
+
+/*Events*/
+
+.events {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #353A47;
+}
+
+.event_pics {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.event_pics img {
+    border: #89FC00 solid 2px;
+    transition: 1s;
+}
+
+.events h2, h3 {
+    color: #89FC00;
+}
+
+.events h3 {
+    margin-top: 15px;   
+}
+
+/*Join Us*/
+
+.join {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.join_div {
+    margin: auto;
+    max-width: 1200px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    text-align: justify;
+    flex-shrink: 1;
+
+}
+
+.join_form {
+    padding: 0 40px;
+    width: 50%;
+}
+
+.join_form form {
+    margin-top: 20px;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    width: 85%;
+}
+
+.join_form label {
+    float: left;
+    clear: left;
+    text-align: right;
+    width: 45%;
+    margin-right: 5px;
+}
+
+.join_form input {
+    clear: left;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 50%;
+}
+
+.join_form input:focus {
+    border: #89fc00 solid 2px;
+}
+
+#button {
+    padding: 7px;
+    font-size: 0.90rem;
+    background-color: #89fc00;
+    color: #353A47;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+    box-shadow: #353A47 -5px 5px 5px;
+}
+
+#button:active {
+    box-shadow: #353A47 -2px 2px 2px;
+    transform: translateY(2px) translateX(-2px);
+}
+
+/*Footer*/
+
+footer {
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+    background-color: #353A47;
+    font-size: 0.5rem;
+    padding: 15px;
+    color: #89FC00;
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    top: 40%;
+}
+
+/*Desktop Animations*/
+
+@media only screen and (min-width: 1100px) {
+    .event_pics img:hover {
+        max-height: 320px;
+    }
+    
+    .event_pics img:active {
+        transition: 0.25s;
+        height: 300px;
+    }
+
+    header li:hover {
+        font-size: 0.95rem;
+    }
+    
+    header li:active {
+        transition: 0s;
+        font-size: 0.85rem;
+    }
+}
+
+/*Tablet Version*/
+
+@media only screen and (max-width: 900px) {
+
+    /*Header*/
+    #name {
+        font-size: 0.85rem;
+    }
+
+    header li {
+        font-size: 0.75rem;
+    }
+
+    /*Who*/
+    #who3, #who2 {
+        display: none;
+    }
+
+    .who {
+        width: 100%;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-shrink: 1;
+    }
+
+    .who_text {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .who_text h1 {
+        font-size: 1.5rem;
+    }
+
+    .who_text p {
+        font-size: 0.65rem;
+    }
+
+    .who img {
+        margin-left: 15px;
+    }
+
+    /*Events*/
+    .events h3 {
+        font-size: 0.75rem;
+    }
+
+    .events h2 {
+        font-size: 1.25rem;
+    }
+
+    /*Join*/
+
+    .join_div {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .join h2 {
+        font-size: 1.25rem;
+    }
+
+    .join p, label {
+        font-size: 0.65rem;
+    }
+
+    .join_div figure {
+        width: 50%;
+    }
+
+    .join_div img {
+        width: 100%;
+    }
+
+    .join_form {
+        width: 50%;
+    }
+}
+
+/*Mobile Version*/
+
+@media only screen and (max-width: 560px) {
+    #name {
+        display: none;
+    }
+
+    .join_form p, label, input {
+        font-size: 0.55rem;
+    }
+
+    #button {
+        font-size: 0.75rem;
+        width: 90px;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*Who*/
+
+    .who_text {
+        width: 100%;
+        font-size: 0.65rem;
+    }
+
+    #who1 {
+        display: none;
+    }
+
+    /*Events*/
+    .event_pics {
+        flex-wrap: wrap;
+    }
+
+    .event_pic {
+        margin-bottom: 30px;
+    }
+
+    /*Join*/
+
+    .join_div {
+        width: 100%;
+        display: inline-flex;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .join figure {
+        display: none;
+    }
+
+    .join_form {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .join_form form {
+        width: 100%;
+    }
+
+
+    .join_form input {
+        width: 60%;
+        float:right;
+        clear: right;
+    }
+
+    .join_form label {
+        margin-bottom: 20px;
+        width: 30%;
+        text-align: left;
+    }
+
+    footer {
+        font-size: 0.35rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    header li {
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".\Resources\CSS\stylesheet.css" type="text/css">
+    <title>The Basket Club</title>
+</head>
+<body>
+    <header>
+        <a href="#home">
+            <div class="logo">
+                <figure>
+                    <img src="Resources\Images\logo.png" alt="The Basket Club Logo">
+                </figure>
+                <h3 id="name">The Basket Club</h3>
+            </div>
+        </a>
+        <ul>
+           <a href="#home"><li>Who We Are</li></a>
+           <a href="#events"><li>Events</li></a> 
+           <a href="#join"><li>Join Us</li></a> 
+        </ul>
+    </header>
+    <section class="Who" id="home">
+        <div class="who_text">
+            <h1>The Basket Club</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis, sapien ac facilisis fringilla, lacus dui semper justo, non interdum mauris elit sed erat. Sed auctor, felis quis finibus suscipit, justo enim sollicitudin orci, eu suscipit nisi libero feugiat augue. Proin arcu nisi, ornare quis egestas vel, viverra vitae sapien.</p>
+        </div>
+        <div class="basket_pics">
+            <figure>
+                <img src="Resources\Images\who1.jpg" alt="team for match" id="who1">
+            </figure>
+            <figure>
+                <img src="Resources\Images\who3.jpg" alt="Girl with a basketball" id="who2">
+            </figure>
+            <figur>
+                <img src="Resources\Images\who2.jpg" alt="Male practicing with a basketball" id="who3">
+            </figure>
+        </div>
+    </section>
+    <section class="events" id="events">
+        <h2>Events</h2>
+        <div class="event_pics">
+            <div class="event_pic">
+                <figure>
+                    <img src="Resources\Images\training.jpg" alt="Training">
+                </figure>
+                <h3>Trainings</h3>
+            </div>
+            <div class="event_pic">
+                <figure>
+                    <img src="Resources\Images\tournament.jpg" alt="Tournament">
+                </fitgure>
+                <h3>Tournaments</h3>
+            </div>
+            <div class="event_pic">
+                <figure>
+                    <img src="Resources\Images\social.jpg" alt="Social meetings">
+                </figure>
+                <h3>Social Meetings</h3>
+            </div>
+        </div>
+    </section>
+    <section class="join" id="join">
+        <h2>Join the Basket</h2>
+        <div class="join_div">
+            <figure>
+                <img src="Resources\Images\join.jpg" alt="Team meeting">
+            </figure>
+            <div class="join_form">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum magna porttitor, pulvinar sapien non, fringilla enim.</p>
+                <form action="">
+                    <label for="first_name">First Name: </label>
+                    <input type="text" name="first_name" required><br>
+                    <label for="last_name">Last Name: </label>
+                    <input type="text" name="last_name" required><br>
+                    <label for="email" id="email">Email: </label>
+                    <input type="text" name="email" placeholder="example@domain.com" required><br>
+                    <input type="submit" value="Submit" id="button">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p><strong>© 2021 — THE BASKET CLUB ALL RIGHTS RESERVED</strong></p>
+    </footer>
+</body>
+</html>
